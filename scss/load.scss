@@ -1,0 +1,21 @@
+
+
+.load {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: $wht3
+}
+
+.load-logo {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    padding: 60px;
+    background-color: $gry;
+    &.top {  top: -60px; }
+    &.mid { top: 50%; transform: translateY(-50%);}
+    &.bot {  bottom: -60px; }
+}

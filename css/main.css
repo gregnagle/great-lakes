@@ -557,3 +557,25 @@ img {
   height: 100vh;
   background-color: #eeeeee;
   overflow: hidden; }
+
+.load {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #e0e0e0; }
+
+.load-logo {
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  padding: 60px;
+  background-color: #bdbdbd; }
+  .load-logo.top {
+    top: -60px; }
+  .load-logo.mid {
+    top: 50%;
+    transform: translateY(-50%); }
+  .load-logo.bot {
+    bottom: -60px; }
