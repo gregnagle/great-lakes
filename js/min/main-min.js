@@ -1,1 +1,1 @@
-$(function(){setTimeout(function(){$(".load-logo").addClass("mid"),$(".load-logo").removeClass("bot"),$(".load-logo").toggleClass("opc")},500)});
+$(function(){var a=0;setTimeout(function(){$(".load-logo").addClass("mid"),setTimeout(function(){$(".loading").addClass("up")},500),setTimeout(function(){$(".loading span").addClass("start");var a=setInterval(function(){$(".loading span").toggleClass("start")},3e3)},2e3)},500)});
