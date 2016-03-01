@@ -1,1 +1,1 @@
-$(function(){function o(){var o=setInterval(function(){t++,console.log(t),t>=4&&!n&&(clearInterval(o),$(".loading").removeClass("opc"),setTimeout(function(){$(".load-logo").addClass("top")},1500))},1e3)}setTimeout(function(){$(".load-logo").addClass("mid"),setTimeout(function(){$(".loading").addClass("up opc")},1e3),setTimeout(function(){$(".loading span").addClass("start");var o=setInterval(function(){$(".loading span").toggleClass("start")},3e3)},2500)},500);var t=0,n=!0;$(window).load(function(){n=!1}),setTimeout(o,2500)});
+$(function(){});
