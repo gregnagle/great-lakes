@@ -6,7 +6,40 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: $wht3
+    background-color: $wht2;
+    overflow: hidden;
+
+    .load-frame {
+        position: absolute;
+        top: 60px;
+        right: 60px;
+        bottom: 60px;
+        left: 60px;
+        background-color: $wht1;
+        overflow: hidden;
+    }
+}
+
+.load-logo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    background-color: $wht3;
+    &.mid {
+        // bottom: set by JS
+        opacity: 1;
+        transition: bottom 3000ms ease-in, opacity 3000ms ease-in;
+    }
+    &.top {
+        // bottom: set by JS
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 // .load-logo {

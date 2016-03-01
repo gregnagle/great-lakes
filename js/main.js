@@ -2,6 +2,49 @@
 
 $(function(){
 
+    var
+        $loadframe    = $('.load-frame'),
+        $loadlogo     = $('.load-logo'),
+        $loadlogoMid  = $('.load-logo.mid'),
+        $loadlogoTop  = $('.load-logo.top');
+
+
+    var measureit = function(){
+
+        var
+            $lfHght    = $loadframe.outerHeight(),
+            $llHght    = $loadlogo.outerHeight(),
+            $llmidMth  = ($lfHght / 2) - ($llHght / 2),
+            $lltopMth  = $lfHght - $llHght;
+            // $boom = Math.floor($llmidMth)
+
+
+        $loadlogoMid.css({
+            'bottom' : $llmidMth
+        });
+        $loadlogoTop.css({
+            'bottom' : $lltopMth
+        });
+
+
+
+        // console.log($wndwdth);
+        // console.log($wndhgth);
+        // console.log($llHght);
+        // console.log($lfHght);
+        // console.log($llmidMth);
+        // console.log($lltopMth);
+
+    };
+
+    measureit();
+
+    $(window).resize(function(){
+        measureit();
+    });
+
+
+
 
 
     // setTimeout(function(){

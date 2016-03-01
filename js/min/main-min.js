@@ -1,1 +1,1 @@
-$(function(){});
+$(function(){var o=$(".load-frame"),t=$(".load-logo"),i=$(".load-logo.mid"),a=$(".load-logo.top"),e=function(){var e=o.outerHeight(),l=t.outerHeight(),n=e/2-l/2,d=e-l;i.css({bottom:n}),a.css({bottom:d})};e(),$(window).resize(function(){e()})});
